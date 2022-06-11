@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+
+    <link rel="stylesheet" href="styles/tetris.css">
+</head>
+
+<body>
+
+    <canvas id="gameArea" width="300" height="600" oncontextmenu="return false"></canvas>
+    <div id="container">
+        <span>Jelenlegi pontom:</span><br>
+        <h1 id="scoreText">0</h1><br>
+        <button id="startButton">Játék indítása</button><br>
+        <h5>Ranglista legalább egy lejátszott játék után jelenik meg!</h5>
+    </div>
+
+    <div id="ranking">
+        <table id="table">
+            <tr>
+                <th>Helyezés</th>
+                <th>Név</th>
+                <th>Pontszám</th>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <audio id="audio" controls autoplay>
+    <source src="media/background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+<script src="scripts/tetris.js"></script>
+
+</html>

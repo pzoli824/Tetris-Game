@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#gameArea {
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 2px solid rgb(223, 223, 223);
+}
+
+#container {
+    position: absolute;
+    text-align: center;
+}
+
+#container * {
+    position: relative;
+}
+
+#ranking {
+    position: absolute;
+}
+
+#table {
+    display: none;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#audio {
+    position: absolute;
+}
+
+.myRow {
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    min-width: 300px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
